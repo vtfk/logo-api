@@ -1,0 +1,15 @@
+{
+  "name": "logo-api",
+  "version": "1.0.0",
+  "description": "Static page for serving logos",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "now dev",
+    "deploy": "now --prod"
+  },
+  "author": "Vestfold og Telemark fylkeskommune",
+  "license": "MIT",
+  "dependencies": {}
+}
