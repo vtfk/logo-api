@@ -9,10 +9,13 @@
     "NODE_ENV": "production"
   },
   "builds": [
-    { "src": "lib/data/epost/*", "use": "@now/static" }
+    { "src": "lib/data/epost/*", "use": "@now/static" },
+    { "src": "lib/data/o365/*", "use": "@now/static" }
+
   ],
   "routes": [
     { "src": "/epost/(.*)", "headers": { "cache-control": "max-age=1209600, public" }, "dest": "lib/data/epost/$1" },
-    { "src": "/.*", "status": 308, "headers": { "Location": "https://vtfylke.no/" } }
+    { "src": "/o365/(.*)", "headers": { "cache-control": "max-age=1209600, public" }, "dest": "lib/data/o365/$1" },
+    { "src": "/.*", "status": 308, "headers": { "Location": "https://www.vtfk.no/" } }
   ]
 }
