@@ -1,6 +1,6 @@
 {
   "name": "logo-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Static page for serving logos",
   "directories": {
     "lib": "lib"
